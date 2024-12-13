@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">analysis</string>
+    <string name="reset_data">Factory Reset!</string>
+    <string name="admin_receiver_status">Reset successfully!</string>
+    <string name="admin_receiver_status_enabled">Permission enabled!</string>
+    <string name="admin_receiver_status_disable_warning">Permission disable warning!</string>
+    <string name="admin_receiver_status_disabled">Permission disabled!</string>
+    <string name="admin_receiver_status_pw_changed">Permission changed!</string>
+</resources>
