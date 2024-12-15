@@ -3,18 +3,14 @@ plugins {
 }
 
 android {
-    namespace = "com.example.analysis"
+    namespace = "com.example.data_management"
     compileSdk = 34
 
     defaultConfig {
-//        applicationId = "com.example.analysis"
-        minSdk = 24
-        //noinspection EditedTargetSdkVersion
-        targetSdk = 34
-//        versionCode = 1
-//        versionName = "1.0"
+        minSdk = 22
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -33,11 +29,9 @@ android {
 }
 
 dependencies {
+
     implementation(libs.appcompat)
     implementation(libs.material)
-    implementation(libs.activity)
-    implementation(libs.constraintlayout)
-    implementation(files("libs/app-debug.aar")) // Specify the exact AAR file name
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
